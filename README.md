@@ -4,6 +4,8 @@ A React application that demonstrates a product modal with an image magnifier fe
 
 ![Magnify Modal Reveal Demo](demo-screenshot.png)
 
+*Note: Replace the placeholder image with an actual screenshot of your application by taking a screenshot when the app is running and saving it as demo-screenshot.png in the root directory.*
+
 ## How can I edit this code?
 
 There are several ways of editing your application.
@@ -100,8 +102,9 @@ docker run -p 8080:8080 -v $(pwd):/app -v /app/node_modules magnify-modal-reveal
 
 ### Using the Helper Script
 
-This project includes a helper script for common Docker operations:
+This project includes helper scripts for common Docker operations:
 
+**For Linux/Mac:**
 ```sh
 # Make the script executable
 chmod +x docker-helper.sh
@@ -122,9 +125,75 @@ chmod +x docker-helper.sh
 ./docker-helper.sh clean
 ```
 
+**For Windows:**
+```sh
+# Start development environment
+docker-helper.bat dev
+
+# Start production environment
+docker-helper.bat prod
+
+# Build development image
+docker-helper.bat build-dev
+
+# Build production image
+docker-helper.bat build-prod
+
+# Clean Docker resources
+docker-helper.bat clean
+```
+
 ## GitHub Repository
 
-This project is available on GitHub. You can clone it using:
+To push this project to your own GitHub repository, follow these steps:
+
+### Option 1: Using the Helper Script
+
+1. Create a new repository on GitHub (do not initialize it with a README, .gitignore, or license)
+2. Use the provided helper script:
+
+**For Linux/Mac:**
+```sh
+# Make the script executable
+chmod +x github-setup.sh
+
+# Run the script with your GitHub repository URL
+./github-setup.sh https://github.com/yourusername/magnify-modal-reveal.git
+```
+
+**For Windows:**
+```sh
+# Run the batch script with your GitHub repository URL
+github-setup.bat https://github.com/yourusername/magnify-modal-reveal.git
+```
+
+### Option 2: Manual Setup
+
+1. Create a new repository on GitHub (do not initialize it with a README, .gitignore, or license)
+2. Push the local repository to GitHub:
+
+```sh
+# Initialize Git repository
+git init
+
+# Configure Git (if not already configured)
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+# Add all files to Git
+git add .
+
+# Commit changes
+git commit -m "Dockerize application with development and production configurations"
+
+# Add your GitHub repository as a remote
+git remote add origin https://github.com/yourusername/magnify-modal-reveal.git
+
+# Push the code to GitHub
+git push -u origin main
+```
+
+Once pushed, you can clone it using:
 
 ```sh
 git clone https://github.com/yourusername/magnify-modal-reveal.git
