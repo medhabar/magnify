@@ -210,3 +210,4 @@ You can deploy this application to any platform that supports Docker containers,
 - Digital Ocean App Platform
 - Vercel
 - Netlify
+
