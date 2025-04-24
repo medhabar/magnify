@@ -2,8 +2,6 @@
 
 A React application that demonstrates a product modal with an image magnifier feature. Perfect for e-commerce websites where users want to examine product details closely.
 
-*Note: Replace the placeholder image with an actual screenshot of your application by taking a screenshot when the app is running and saving it as demo-screenshot.png in the root directory.*
-
 ## How can I edit this code?
 
 There are several ways of editing your application.
